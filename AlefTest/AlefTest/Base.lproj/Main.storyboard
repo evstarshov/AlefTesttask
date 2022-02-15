@@ -51,7 +51,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="+ Добавить ребенка"/>
                                         <connections>
-                                            <action selector="addChild" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tpz-s1-7Jp"/>
+                                            <action selector="addChildButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ukv-pC-piB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -73,7 +73,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-OQ-OMg">
                                 <rect key="frame" x="20" y="831" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Очистить таблицу">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearTableButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="nb9-6E-W6e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,9 +102,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addChildButton" destination="C8e-Km-Evx" id="nTR-OO-YkE"/>
+                        <outlet property="addChildButton" destination="C8e-Km-Evx" id="MR9-dy-YAf"/>
                         <outlet property="ageTextField" destination="4IB-8d-qSN" id="4aU-0f-m2C"/>
                         <outlet property="childrenTableView" destination="E25-n3-IUq" id="M65-E9-eRy"/>
+                        <outlet property="clearTableButton" destination="xFf-OQ-OMg" id="0XS-ap-g2R"/>
                         <outlet property="nameTextField" destination="3kd-1W-6cH" id="6tu-Qz-ykv"/>
                     </connections>
                 </viewController>
@@ -110,6 +117,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
