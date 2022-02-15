@@ -42,9 +42,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearTableButtonTapped() {
-        print("clearing table")
-        childrenArray.removeAll()
-        childrenTableView.reloadData()
+        print("clear table?")
+        showAlertClearTable()
     }
     
     private func appendChild() {
@@ -54,6 +53,22 @@ class ViewController: UIViewController {
         let age = ageTextField.text
         childrenArray.append(Child(name: name!, age: age!))
         maxChildren -= 1
+    }
+    
+    private func showAlertClearTable() {
+        let alert = UIAlertController(
+            title: "Вниммание!",
+            message: "Очистить таблицу?",
+            preferredStyle: .alert)
+        let yesItem = UIAlertAction(
+            title: "Да", style: .default) { _ in
+                self.childrenArray.removeAll()
+                self.childrenTableView.reloadData()
+            }
+        let noItem = UIAlertAction(title: "Нет", style: .cancel)
+        alert.addAction(noItem)
+        alert.addAction(yesItem)
+        present(alert, animated: true, completion: nil)
     }
 
 }
