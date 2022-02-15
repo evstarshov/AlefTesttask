@@ -62,11 +62,11 @@
 		3A23F48627BBE83A00A6E153 /* AlefTest */ = {
 			isa = PBXGroup;
 			children = (
+				3A2918CB27BBF715007758A7 /* Controller */,
 				3A2918C627BBF5A3007758A7 /* Cell */,
 				3A2918C327BBF48E007758A7 /* Model */,
 				3A23F48727BBE83A00A6E153 /* AppDelegate.swift */,
 				3A23F48927BBE83A00A6E153 /* SceneDelegate.swift */,
-				3A23F48B27BBE83A00A6E153 /* ViewController.swift */,
 				3A23F48D27BBE83A00A6E153 /* Main.storyboard */,
 				3A23F49027BBE83B00A6E153 /* Assets.xcassets */,
 				3A23F49227BBE83B00A6E153 /* LaunchScreen.storyboard */,
@@ -90,6 +90,14 @@
 				3A2918C827BBF5CC007758A7 /* ChildrenTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3A2918CB27BBF715007758A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A23F48B27BBE83A00A6E153 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
