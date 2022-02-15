@@ -13,6 +13,9 @@
 		3A23F48F27BBE83A00A6E153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A23F48D27BBE83A00A6E153 /* Main.storyboard */; };
 		3A23F49127BBE83B00A6E153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A23F49027BBE83B00A6E153 /* Assets.xcassets */; };
 		3A23F49427BBE83B00A6E153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A23F49227BBE83B00A6E153 /* LaunchScreen.storyboard */; };
+		3A2918C527BBF49D007758A7 /* ChildrenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2918C427BBF49D007758A7 /* ChildrenModel.swift */; };
+		3A2918C927BBF5CC007758A7 /* ChildrenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2918C727BBF5CC007758A7 /* ChildrenTableViewCell.swift */; };
+		3A2918CA27BBF5CC007758A7 /* ChildrenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2918C827BBF5CC007758A7 /* ChildrenTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3A23F49027BBE83B00A6E153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A23F49327BBE83B00A6E153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A23F49527BBE83B00A6E153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2918C427BBF49D007758A7 /* ChildrenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenModel.swift; sourceTree = "<group>"; };
+		3A2918C727BBF5CC007758A7 /* ChildrenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenTableViewCell.swift; sourceTree = "<group>"; };
+		3A2918C827BBF5CC007758A7 /* ChildrenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildrenTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		3A23F48627BBE83A00A6E153 /* AlefTest */ = {
 			isa = PBXGroup;
 			children = (
+				3A2918C627BBF5A3007758A7 /* Cell */,
+				3A2918C327BBF48E007758A7 /* Model */,
 				3A23F48727BBE83A00A6E153 /* AppDelegate.swift */,
 				3A23F48927BBE83A00A6E153 /* SceneDelegate.swift */,
 				3A23F48B27BBE83A00A6E153 /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				3A23F49527BBE83B00A6E153 /* Info.plist */,
 			);
 			path = AlefTest;
+			sourceTree = "<group>";
+		};
+		3A2918C327BBF48E007758A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A2918C427BBF49D007758A7 /* ChildrenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A2918C627BBF5A3007758A7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3A2918C727BBF5CC007758A7 /* ChildrenTableViewCell.swift */,
+				3A2918C827BBF5CC007758A7 /* ChildrenTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +152,7 @@
 			files = (
 				3A23F49427BBE83B00A6E153 /* LaunchScreen.storyboard in Resources */,
 				3A23F49127BBE83B00A6E153 /* Assets.xcassets in Resources */,
+				3A2918CA27BBF5CC007758A7 /* ChildrenTableViewCell.xib in Resources */,
 				3A23F48F27BBE83A00A6E153 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2918C527BBF49D007758A7 /* ChildrenModel.swift in Sources */,
 				3A23F48C27BBE83A00A6E153 /* ViewController.swift in Sources */,
 				3A23F48827BBE83A00A6E153 /* AppDelegate.swift in Sources */,
+				3A2918C927BBF5CC007758A7 /* ChildrenTableViewCell.swift in Sources */,
 				3A23F48A27BBE83A00A6E153 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
